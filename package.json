@@ -17,6 +17,10 @@
     "request":  "2.88.0",
     "snoowrap": "1.15.2"
   },
+  "engines": {
+    "node": "v8.12.0",
+    "npm": "6.4.1"
+  }
   "bugs": {
     "url": "https://github.com/idkm23/clairobot/issues"
   },
