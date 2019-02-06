@@ -4,7 +4,7 @@
   "description": "clairobot for /r/clairo updates",
   "main": "index.js",
   "scripts": {
-    "start": "node get-page.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
