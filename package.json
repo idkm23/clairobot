@@ -4,7 +4,7 @@
   "description": "clairobot for /r/clairo updates",
   "main": "index.js",
   "scripts": {
-    "start": "npm get-page.js"
+    "start": "node get-page.js"
   },
   "repository": {
     "type": "git",
