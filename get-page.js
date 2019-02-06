@@ -33,7 +33,7 @@ request(options, function(err, response, body) {
     
     if( (Date.now() - Date.parse(time)) <= 600000 ) {
       console.log("Creating post for [", title, "]\n");
-      r.getSubreddit('pizza_friends').submitLink( {
+      r.getSubreddit('clairo').submitLink( {
         title: title,
         url: url
       })
