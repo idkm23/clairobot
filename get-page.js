@@ -24,14 +24,14 @@ request(options, function(err, response, body) {
   
   $('.audible').each( function(i, elem) {
     var time  = $(elem).children('time').text();
-    var title = $( $(elem).children('h2').html() ).attr('href');
-    var url   = "https://soundcloud.com" + title;
-    title = title.replace(/\/ccottrill\//i, '').replace(/-/g, ' ');
-      
-    console.log(title, '  ', url );
-    
+    var url = $( $(elem).children('h2').html() ).attr('href');
+    url   = "https://soundcloud.com" + url;
+    var title = $( $(elem).children('h2').html() ).text();
+   	title = title + " (SoundCloud)";
+		
+ 
     if( (Date.now() - Date.parse(time)) <= 600000 ) {
-      console.log("Creating post for [", title, "]\n");
+      console.log("Creating post: \"", title, "\"\n");
       r.getSubreddit('clairo').submitLink( {
         title: title,
         url: url
