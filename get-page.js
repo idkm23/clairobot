@@ -6,7 +6,7 @@ const r = new snoowrap( {
   userAgent:     'clairobot',
   clientId:      process.env.reddit_client_id,
   clientSecret:  process.env.reddit_client_secret,
-  refresh_token: process.env.refresh_token
+  refresh_token: process.env.reddit_refresh_token
 } )
 
 const options = {
