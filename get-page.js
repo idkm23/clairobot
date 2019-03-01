@@ -4,8 +4,8 @@ const snoowrap = require('snoowrap');
 
 const r = new snoowrap( {
   userAgent:     'clairobot',
-  clientId:      process.env.client_id,
-  clientSecret:  process.env.client_secret,
+  clientId:      process.env.reddit_client_id,
+  clientSecret:  process.env.reddit_client_secret,
   refresh_token: process.env.refresh_token
 } )
 
